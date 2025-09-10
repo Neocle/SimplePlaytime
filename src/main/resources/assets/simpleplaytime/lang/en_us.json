@@ -1,0 +1,13 @@
+{
+  "itemGroup.simpleplaytime": "Example Mod Tab",
+  "block.simpleplaytime.example_block": "Example Block",
+  "item.simpleplaytime.example_item": "Example Item",
+
+  "simpleplaytime.configuration.title": "Simple Playtime Configs",
+  "simpleplaytime.configuration.section.simpleplaytime.common.toml": "Simple Playtime Configs",
+  "simpleplaytime.configuration.section.simpleplaytime.common.toml.title": "Simple Playtime Configs",
+  "simpleplaytime.configuration.items": "Item List",
+  "simpleplaytime.configuration.logDirtBlock": "Log Dirt Block",
+  "simpleplaytime.configuration.magicNumberIntroduction": "Magic Number Text",
+  "simpleplaytime.configuration.magicNumber": "Magic Number"
+}
