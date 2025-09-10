@@ -2,7 +2,6 @@ package fr.neocle.simpleplaytime.data;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.reflect.TypeToken;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.commands.CommandSourceStack;
 import net.neoforged.fml.loading.FMLPaths;
@@ -217,7 +216,7 @@ public class PlaytimeManager {
         
         saveData();
     }
-
+ 
     private static class PlaytimeData {
         public Map<UUID, Long> playtimes;
         public Map<UUID, Set<Integer>> givenRewards;
