@@ -3,7 +3,6 @@ package fr.neocle.simpleplaytime;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerPlayer;
 import net.neoforged.bus.api.IEventBus;
-import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
@@ -15,6 +14,7 @@ import net.neoforged.neoforge.event.server.ServerStoppingEvent;
 import fr.neocle.simpleplaytime.config.PlaytimeConfig;
 import fr.neocle.simpleplaytime.data.PlaytimeManager;
 import fr.neocle.simpleplaytime.commands.PlaytimeCommand;
+import fr.neocle.simpleplaytime.commands.SetPlaytimeCommand;
 import fr.neocle.simpleplaytime.integration.LuckPermsIntegration;
 import net.neoforged.neoforge.event.tick.ServerTickEvent;
 
@@ -69,5 +69,6 @@ public class SimplePlaytime {
 
     private void onRegisterCommands(RegisterCommandsEvent event) {
         PlaytimeCommand.register(event.getDispatcher());
+        SetPlaytimeCommand.register(event.getDispatcher());
     }
 }

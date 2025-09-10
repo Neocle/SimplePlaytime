@@ -208,6 +208,16 @@ public class PlaytimeManager {
         }
     }
 
+    public void setPlaytimeMillis(UUID playerId, long millis) {
+        playtimes.put(playerId, millis);
+
+        if (sessionStartTimes.containsKey(playerId)) {
+            sessionStartTimes.put(playerId, System.currentTimeMillis());
+        }
+        
+        saveData();
+    }
+
     private static class PlaytimeData {
         public Map<UUID, Long> playtimes;
         public Map<UUID, Set<Integer>> givenRewards;
